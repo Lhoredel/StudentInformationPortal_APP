@@ -8,6 +8,7 @@ import Students from "./pages/Students";
 import Courses from "./pages/Courses";
 import Grades from "./pages/Grades";
 import Attendance from "./pages/Attendance";
+import Calendar from "./pages/Calendar";
 import Announcements from "./pages/Announcements";
 import Settings from "./pages/Settings";
 
@@ -26,7 +27,7 @@ function App() {
             <Route path="/courses" element={<Courses />} />
             <Route path="/grades" element={<Grades />} />
             <Route path="/attendance" element={<Attendance />} />
-            <Route path="/calendar" element={<Dashboard />} />
+            <Route path="/calendar" element={<Calendar />} />
             <Route
               path="/announcements"
               element={<Announcements />}

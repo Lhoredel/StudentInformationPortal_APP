@@ -76,6 +76,7 @@ function Courses() {
 
       <div className="search-box">
         <Search size={20} />
+
         <input
           type="text"
           placeholder="Search course by name or code..."
