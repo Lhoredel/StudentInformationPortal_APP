@@ -5,7 +5,7 @@ import {
   Mail,
   GraduationCap,
 } from "lucide-react";
-import "./Students.css";
+
 
 function Students() {
   const [search, setSearch] = useState("");
