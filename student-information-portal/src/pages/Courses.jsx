@@ -5,6 +5,7 @@ import {
   Users,
   GraduationCap,
 } from "lucide-react";
+
 function Courses() {
   const [search, setSearch] = useState("");
 

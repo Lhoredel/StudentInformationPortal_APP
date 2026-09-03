@@ -27,7 +27,10 @@ function App() {
             <Route path="/grades" element={<Grades />} />
             <Route path="/attendance" element={<Attendance />} />
             <Route path="/calendar" element={<Dashboard />} />
-            <Route path="/announcements" element={<Announcements />} />
+            <Route
+              path="/announcements"
+              element={<Announcements />}
+            />
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>

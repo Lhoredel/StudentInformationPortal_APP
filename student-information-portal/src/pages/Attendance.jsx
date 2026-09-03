@@ -6,7 +6,7 @@ import {
   Clock,
   XCircle,
 } from "lucide-react";
-import "./Attendance.css";
+
 
 function Attendance() {
   const [search, setSearch] = useState("");

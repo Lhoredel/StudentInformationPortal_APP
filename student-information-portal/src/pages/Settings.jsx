@@ -8,7 +8,7 @@ import {
   Mail,
   Moon,
 } from "lucide-react";
-import "./Settings.css";
+
 
 function Settings() {
   const [notifications, setNotifications] = useState(true);

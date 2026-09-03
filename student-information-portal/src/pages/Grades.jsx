@@ -5,7 +5,7 @@ import {
   BookOpen,
   Award,
 } from "lucide-react";
-import "./Grades.css";
+
 
 function Grades() {
   const [search, setSearch] = useState("");
