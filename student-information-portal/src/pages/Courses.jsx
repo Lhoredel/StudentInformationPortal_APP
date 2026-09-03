@@ -5,7 +5,6 @@ import {
   Users,
   GraduationCap,
 } from "lucide-react";
-import "./Courses.css";
 
 function Courses() {
   const [search, setSearch] = useState("");
@@ -63,22 +62,20 @@ function Courses() {
 
   return (
     <div className="courses-page">
-
-      <div className="courses-header">
+      <div className="page-header">
         <div>
           <h1>Courses</h1>
           <p>Manage and view all available courses.</p>
         </div>
 
-        <button className="add-course-btn">
+        <button className="primary-btn">
           <BookOpen size={20} />
           Add Course
         </button>
       </div>
 
-      <div className="courses-search">
+      <div className="search-box">
         <Search size={20} />
-
         <input
           type="text"
           placeholder="Search course by name or code..."
@@ -92,10 +89,8 @@ function Courses() {
       </div>
 
       <div className="course-grid">
-
         {filteredCourses.map((course) => (
           <div className="course-card" key={course.code}>
-
             <div className="course-top">
               <div className="course-icon">
                 <GraduationCap size={25} />
@@ -113,38 +108,22 @@ function Courses() {
             </p>
 
             <div className="course-details">
-
-              <div className="course-detail">
+              <div>
                 <Users size={18} />
-                <span>
-                  {course.students} Students
-                </span>
+                <span>{course.students} Students</span>
               </div>
 
-              <div className="course-detail">
+              <div>
                 <BookOpen size={18} />
-                <span>
-                  {course.duration}
-                </span>
+                <span>{course.duration}</span>
               </div>
-
             </div>
 
-            <button className="view-course-btn">
+            <button className="view-btn">
               View Course
             </button>
-
           </div>
         ))}
-
-        {filteredCourses.length === 0 && (
-          <div className="no-courses">
-            <Search size={45} />
-            <h2>No course found</h2>
-            <p>Try another course name or code.</p>
-          </div>
-        )}
-
       </div>
     </div>
   );
